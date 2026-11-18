@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1,
+  "group": "Perry",
+  "ingredient": {
+    "item": "zurritestdemod:perryore"
+  },
+  "result": {
+    "count": 1,
+    "id": "zurritestdemod:perrylingote"
+  }
+}

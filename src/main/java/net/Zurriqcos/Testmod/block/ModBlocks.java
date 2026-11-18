@@ -18,7 +18,11 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> ABADBLOQUE = registerBlock("bloque_abad",
             () -> new Block(BlockBehaviour.Properties.of()
-            .requiresCorrectToolForDrops().sound(SoundType.ANVIL)));
+            .requiresCorrectToolForDrops().strength(4f).sound(SoundType.ANVIL)));
+
+    public static final DeferredBlock<Block> PERRYOREBLOQUE = registerBlock("bloque_perryore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops().strength(4f).sound(SoundType.AMETHYST)));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){

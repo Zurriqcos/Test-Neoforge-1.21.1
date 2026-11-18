@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "Perry",
+  "ingredients": [
+    {
+      "item": "zurritestdemod:bloque_abad"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "zurritestdemod:perryore"
+  }
+}

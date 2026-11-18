@@ -1,6 +1,7 @@
 package net.Zurriqcos.Testmod;
 
 import net.Zurriqcos.Testmod.block.ModBlocks;
+import net.Zurriqcos.Testmod.item.ModCreativeModeTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -46,6 +47,7 @@ public class ExampleMod {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
+        ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         // Register ourselves for server and other game events we are interested in.
@@ -73,6 +75,7 @@ public class ExampleMod {
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.ABADBLOQUE);
+            event.accept(ModBlocks.PERRYOREBLOQUE);
         }
     }
 
